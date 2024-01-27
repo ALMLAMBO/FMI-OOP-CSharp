@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorComponents", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorModels", "TestGeneratorModels\TestGeneratorModels.csproj", "{12083A3C-4546-463E-ABFB-D6604019959A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorApi", "TestGeneratorApi\TestGeneratorApi.csproj", "{0A8AEEA4-478E-4A2D-A6CF-5CF90830A55C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGeneratorServices", "TestGeneratorServices\TestGeneratorServices.csproj", "{05EB37AC-FFED-4A90-AC3B-2C6FE56CE774}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{12083A3C-4546-463E-ABFB-D6604019959A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12083A3C-4546-463E-ABFB-D6604019959A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12083A3C-4546-463E-ABFB-D6604019959A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8AEEA4-478E-4A2D-A6CF-5CF90830A55C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8AEEA4-478E-4A2D-A6CF-5CF90830A55C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8AEEA4-478E-4A2D-A6CF-5CF90830A55C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8AEEA4-478E-4A2D-A6CF-5CF90830A55C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EB37AC-FFED-4A90-AC3B-2C6FE56CE774}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EB37AC-FFED-4A90-AC3B-2C6FE56CE774}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EB37AC-FFED-4A90-AC3B-2C6FE56CE774}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EB37AC-FFED-4A90-AC3B-2C6FE56CE774}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
