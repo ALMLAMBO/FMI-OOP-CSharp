@@ -4,9 +4,60 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestGeneratorApp"
+        xmlns:custom="clr-namespace:TestGeneratorComponents;assembly=TestGeneratorComponents"
+        xmlns:testGeneratorApp="clr-namespace:TestGeneratorApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="MainWindow" Height="800" Width="800">
+    
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Courier New" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="FontFamily" Value="Courier New" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Window.Resources>
+    
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Title -->
+        <Label x:Name="lblTitle" Content="General Knowledge quiz" FontSize="40" FontWeight="Bold"
+               VerticalContentAlignment="Center" HorizontalContentAlignment="Center" />
+        
+        <!-- Question and timer component -->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5*" />
+            </Grid.RowDefinitions>
+            
+            <custom:QuizTimer Visibility="Hidden" />
+            
+            <!-- Question component -->
+            <custom:QuestionComponent Grid.Row="1" Visibility="Hidden" />
+        </Grid>
+        
+        <!-- Quiz buttons -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <!-- Previous button -->
+            <Button x:Name="btnPrev" Margin="25" Content="Previous" />
+            <!-- Start button -->
+            <Button Grid.Column="1" x:Name="btnStart" Margin="25" Content="Start" />
+            <!-- Next button -->
+            <Button Grid.Column="2" x:Name="btnNext" Margin="25" Content="Next" />
+        </Grid>
     </Grid>
 </Window>
