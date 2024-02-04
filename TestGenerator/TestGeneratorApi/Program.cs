@@ -20,8 +20,9 @@ if (app.Environment.IsDevelopment()) {
 
 app.UseHttpsRedirection();
 app.UseRouting();
-app.MapControllerRoute(
-					   name: "default",
-					   pattern: "/api/{controller}/{action}"
-					   );
+app.MapControllers();
+// app.MapControllerRoute(
+// 					   name: "default",
+// 					   pattern: "/api/{controller}/{action}"
+// 					   );
 app.Run();

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<questions>
+  <question>
+    <text>Which planet is the closest to the Sun?</text>
+    <answers>
+      <answer correct="true">Mercury</answer>
+      <answer correct="false">Venus</answer>
+      <answer correct="false">Earth</answer>
+      <answer correct="false">Mars</answer>
+    </answers>
+  </question>
+  <question>
+    <text>Which mountain is the highest mountain in the world?</text>
+    <answers>
+      <answer correct="true">Mount Everest</answer>
+      <answer correct="false">K2</answer>
+      <answer correct="false">Kangchenjunga</answer>
+      <answer correct="false">Lhotse</answer>
+    </answers>
+  </question>
+  <question>
+    <text>Which mountain is the highest mountain in the world?</text>
+    <answers>
+      <answer correct="true">Mount Everest</answer>
+      <answer correct="false">K2</answer>
+      <answer correct="false">Kangchenjunga</answer>
+      <answer correct="false">Lhotse</answer>
+    </answers>
+  </question>
+</questions>

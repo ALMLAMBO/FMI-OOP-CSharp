@@ -3,7 +3,6 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using TestGeneratorModels.DB;
 using TestGeneratorServices;
-using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace TestGeneratorApi {
 	[ApiController]
@@ -24,6 +23,7 @@ namespace TestGeneratorApi {
 		
 		[HttpPost]
 		public IActionResult AddQuestion([FromBody] JsonElement jsonElement) {
+			
 			Question question = JsonConvert.DeserializeObject<Question>(jsonElement.GetRawText())!;
 			_questionService.AddQuestion(question);
 
